@@ -1,6 +1,9 @@
 import streamlit as st
 import pandas as pd
 import joblib
+import category_encoders
+import xgboost
+import sklearn
 
 
 Inputs = joblib.load("E:\CV_files\zomato\deployment\Inputs.pkl")
