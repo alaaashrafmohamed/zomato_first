@@ -5,8 +5,8 @@ import category_encoders
 import xgboost
 import sklearn
 
-Inputs = joblib.load("E:/CV_files/zomato/deployment/Inputs.pkl")
-Model = joblib.load("E:/CV_files/zomato/deployment/Model.pkl")
+Inputs = joblib.load("E:/CV_files/zomato/deployment/Inputs.pkl".replace("/", "\\"))
+Model = joblib.load("E:/CV_files/zomato/deployment/Model.pkl".replace("/", "\\"))
 
 def prediction(online_order, book_table, votes, location,approx_cost,listed_in,listed_in_city,cuisines_counts,rest_type_counts):
     test_df = pd.DataFrame(columns=Inputs)
