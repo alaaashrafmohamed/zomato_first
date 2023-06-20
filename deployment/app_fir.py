@@ -1,9 +1,9 @@
-category_encoders==2.6.1
-joblib==1.2.0
-pandas==2.0.2
-scikit_learn==1.2.2
-streamlit==1.23.1
-xgboost==1.7.6
+import streamlit as st
+import pandas as pd
+import joblib
+import category_encoders
+import xgboost
+import sklearn
 
 
 Inputs = joblib.load("E:\CV_files\zomato\deployment\Inputs.pkl")
